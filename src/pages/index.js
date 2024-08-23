@@ -1,5 +1,6 @@
+import Main from "@/Components/Main";
 
-import Main from '../components/Main';
+
 
 export async function getServerSideProps() {
     const res = await fetch('https://fakestoreapi.com/products/');
