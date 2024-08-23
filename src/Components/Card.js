@@ -4,7 +4,11 @@ import Image from 'next/image'
 const Card = ({product}) => {
     const [isLiked, setIsLiked] = useState(false);
 
- 
+   
+  
+    const toggleLike = () => {
+      setIsLiked(!isLiked);
+    }
   return (
     <div className="card">
         <div className="imageContainer">
