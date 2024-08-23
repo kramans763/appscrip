@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='menu-icon'>
                &#9776;
             </div>
-            <Image src="/assets/logo.png" alt="Logo" width={36} height={36} />
+            <Image src="/assets/Logo.png" alt="Logo" width={36} height={36} />
         </div>
         <div className='navbar-top-center'>
             <p>LOGO</p>
