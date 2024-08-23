@@ -4,17 +4,7 @@ import Image from 'next/image'
 const Card = ({product}) => {
     const [isLiked, setIsLiked] = useState(false);
 
-    useEffect(() => {
-      const likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || {};
-      setIsLiked(!!likedProducts[product.id]);
-    }, [product.id]);
-  
-    const toggleLike = () => {
-      const likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || {};
-      likedProducts[product.id] = !isLiked;
-      localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
-      setIsLiked(!isLiked);
-    }
+ 
   return (
     <div className="card">
         <div className="imageContainer">
